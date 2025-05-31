@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Maximiliano Varas H.</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="navbar" href="navbar.css">
     </head>
     <body>
+        <div id="navbar"></div>
         <h1>Welcome to my website! </h1>
         <p>Nothing much to see here at the moment.<br><strong>test</strong></p>
         <h1>About me!</h1>
@@ -15,5 +17,12 @@
       <h1>Thanks for taking a look!</h1>
         <p>If there are any features missing, that's because I like to test stuff before uploading it to my website. I'm quite a busy fella.</p>
     </footer>
+    <script>
+        fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            )};
+    </script>
     </body>
 </html>
