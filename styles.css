@@ -1,6 +1,7 @@
 h {
     font-family: 'Calibri', 'Arial Narrow', Arial, sans-serif;
 }
-h1 {
+.content {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
