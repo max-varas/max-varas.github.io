@@ -17,12 +17,13 @@
       <h1>Thanks for taking a look!</h1>
         <p>If there are any features missing, that's because I like to test stuff before uploading it to my website. I'm quite a busy fella.</p>
     </footer>
-    <script>
-        fetch("/navbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-            )}
-    </script>
+  <script>
+    fetch('/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
     </body>
 </html>
