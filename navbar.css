@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 .navbar a{
-    color: #0F0F0F;
+    color: #c5c6c7;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -15,6 +15,7 @@
 }
 .navbar a:hover{
     background-color: #D3D3D3;
+    color: #0f0f0f;
 }
 .navbar li{
     float: right;
