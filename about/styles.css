@@ -1,7 +1,7 @@
 h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    size: 65px;
+    size: 70px;
     padding: 100px;
 }
 h2{
@@ -13,4 +13,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     size: 40px;
+}
+.intro{
+    size: 50px;
 }
