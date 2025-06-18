@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
           newPath = '/en' + currentPath;
         }
+        console.log("Current Path:", currentPath);
+        console.log("Calculated New Path:", newPath);
+        const fullRedirectUrl = window.location.origin + newPath;
+        console.log("Attempting to redirect to:", fullRedirectUrl);
         window.location.href = window.location.origin + newPath;
       }
     });
