@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!isEnglishPage) {
         let newPath;
         if (currentPath === '/' || currentPath === '/index.html' || currentPath === 'index.html') {
-          newPath = '/en/';
+          newPath = '/en/index.html';
         } else {
           newPath = '/en' + currentPath;
         }
