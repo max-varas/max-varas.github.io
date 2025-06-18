@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     langEnBtn.addEventListener('click', function(e){
       e.preventDefault();
+        console.log("Funciona")
       if (!isEnglishPage) {
         let newPath;
         if (currentPath === '/' || currentPath === '/index.html' || currentPath === 'index.html') {
