@@ -1,1 +1,43 @@
-
+<doctype HTML>
+  <HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me! Maximiliano Varas H.</title>
+        <link rel="stylesheet" href="/about/styles.css">
+        <link rel="stylesheet" href="/navbar.css">
+    </head>
+    
+    <body>
+      <div id="navbar"></div>
+      <h1>Here's what I am made of, in a more intricate way than just a simple “I just spawned here”.</h1>
+      <div class="intro">
+        <p>I am a 15-year-old teenager from Chile. I learned Spanish at 1 and English at 12, so I'm what most people consider bilingual. I've always loved a good challenge, which is why I like coding and why I usually run the extra mile when it comes to school projects. Perfection is what is in my eyes, not only passing. Nothing is perfect, but that's the beauty of life, isn't it?</p>
+      </div> 
+      <h2>My Philosophy:</h2>
+      <div class="intro2">
+        <p>I believe the world exists to be explored. I don't really settle with a simple “this works this way”. I like knowing the “why”, the “if”, the “how”, and the “since when” about stuff. This website is part of my journey as a lifelong learner, since I often experiment with it, adding some code here and there, just to see what I can do.</p>
+      </div>
+      <h2>My bilingual background:</h2>
+      <div class="bilingual">
+        <p>I speak two languages fluently. English as my L2, and Spanish as my L1. Bilingualism has been a part of me ever since I was in 6th grade, and it has shaped my way of both studying and thinking. It has become a core part of me, and yeah, I do slip into “chilenismos” in English and mispronunciation in Spanish.</p>
+      </div>  
+        <h2>A brief story on how I learned English:</h2> 
+      <div class="text">
+        <p>My language learning journey was basically a learner's utopia: Absorbing the language through immersion early on and developing a natural-sounding accent. In my case, I was risen watching nursery rhymes in English and hearing my family members speak Spanish, so when EFL (English as a Foreign Language) classes started at school, I already knew some basic words. I quickly got in love with the language and started learning on my own, which quickly became one of my ways to kill time. I was 10 when the pandemic hit, which in turn changed my life to make it gravitate towards computers. I quickly started feeling curious and I began googling stuff in English instead of Spanish, which eventually became a habit and lead to me absorbing the language like a thirsty vacuum. In the meantime, I noticed I struggled with the “R” sound, to which I decided to train myself on a British accent, so I didn't have to use it as frequently. I was 12 when I realized I was good at English, and that's what I consider the start of my bilingualism, since I was able to have conversations with my teacher. Granted they were sloppy and quite basic, but still conversations far beyond what they taught at school. </p>
+      </div>
+      <h2>My interest in Coding:</h2>
+      <div class="text">
+        <p>It all began when I was 9. I learned how to create simple visual basic scripts in my computer. It was my first actual contact with coding, even if it was goofing around. These scripts lead to my first Python program, a simple “Hello, world!” that acted like a snowball. A snowball that grew larger and larger as time went on and I acquired more knowledge. Now, I know Python, I’m learning HTML, CSS, JS, and some ML since I plan on participating in science fairs using an AI model trained by myself! I still imagine where I would be if my parents never let me code my scripts on the family computer.</p>
+      </div>
+      <script>
+        fetch('/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navbar:', error));
+      </script>
+      
+    </body>
+  </HTML>
