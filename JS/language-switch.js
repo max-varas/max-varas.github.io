@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Calculated New Path:", newPath);
         const fullRedirectUrl = window.location.origin + newPath;
         console.log("Attempting to redirect to:", fullRedirectUrl);
-        //window.location.href = window.location.origin + newPath;
+        window.location.href = window.location.origin + newPath;
       }
     });
   }
