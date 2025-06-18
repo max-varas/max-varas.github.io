@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const langEnBtn = document.getElementById('EnglishButton');
     const langEsBtn = document.getElementById('SpanishButton');
-    if (!langEnBtn||!langEsBtn) {
-      console.warn("Language switcher buttons not found. No se han encontrado los botones de cambio de idioma.");
-      return;
-    }
+//    if (!langEnBtn||!langEsBtn) {
+//      console.warn("Language switcher buttons not found. No se han encontrado los botones de cambio de idioma.");
+//      return;
+//    }
   let currentPath = window.location.pathname;
   const isEnglishPage = currentPath.startsWith('/en/');
   langEsBtn.addEventListener('click', function(e) {
