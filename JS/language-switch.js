@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     const langEnBtn = document.getElementById('EnglishButton');
     const langEsBtn = document.getElementById('SpanishButton');
-    if (!LangEnBtn||!LangEsBtn) {
+    if (!langEnBtn||!langEsBtn) {
       console.warn("Language switcher buttons not found. No se han encontrado los botones de cambio de idioma.");
       return;
     }
   let currentPath = window.location.pathname;
   const isEnglishPage = currentPath.startsWith('/en/');
-  LangEsBtn.addEventListener('click', function(e) {
+  langEsBtn.addEventListener('click', function(e) {
     e.preventDefault();
     if (isEnglishPage) {
       const newPath = currentPath.replace('/en/', '/');
       window.location.href = window.location.origin + newPath;
     }
   });
-  LangEnBtn.addEventListener('click', function(e){
+  langEnBtn.addEventListener('click', function(e){
     e.preventDefault();
     if (!isEnglishPage) {
       let newPath;
