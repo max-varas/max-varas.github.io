@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
       console.warn("Language switcher buttons not found. No se han encontrado los botones de cambio de idioma.");
     }
   console.log("Value of buttonToActivate on page load:", langEnBtn);
+  let currentPath = window.location.pathname;
+  const isEnglishPage = currentPath.startsWith('/en/');
   if (langEsBtn) {  
-    let currentPath = window.location.pathname;
-    const isEnglishPage = currentPath.startsWith('/en/');
     langEsBtn.addEventListener('click', function(e) {
       e.preventDefault();
       if (isEnglishPage) {
