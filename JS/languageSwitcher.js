@@ -1,4 +1,5 @@
 export function switchToEnglish() {
+    console.log ("Switching to English");
     let currentPath = window.location.pathname;
     const isEnglishPage = currentPath.startsWith('/en/');
     if (!isEnglishPage) {
@@ -16,6 +17,7 @@ export function switchToEnglish() {
     }
 }
 export function switchToSpanish() {
+    console.log("Switching to Spanish");
     let currentPath = window.location.pathname;
     const isEnglishPage = currentPath.startsWith('/en/');
     if (isEnglishPage) {
