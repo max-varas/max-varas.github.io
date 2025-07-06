@@ -17,6 +17,10 @@
     background-color: #D3D3D3;
     color: #0f0f0f;
 }
+.navbar button{
+    background-color: #D3D3D3;
+    color: #0f0f0f;
+}
 .navbar li{
     float: right;
 }
