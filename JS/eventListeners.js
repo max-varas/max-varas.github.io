@@ -1,3 +1,4 @@
+import { switchToEnglish, switchToSpanish } from './languageSwitcher.js';
 export function setupNavbarListeners() {
     const stableParent = document.getElementById('app-header');
 
