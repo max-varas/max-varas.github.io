@@ -6,7 +6,7 @@ export function setupNavbarListeners() {
          console.log("app header found")
          stableParent.addEventListener('click', function(event) {
              console.log("click")
-            const clickedElement = event.target;
+            const clickedElement = event.target.closest('button[data-action]');
             const action = clickedElement.dataset.action;
 
             if (action === 'switch-lang-en') {
