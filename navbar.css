@@ -23,7 +23,7 @@
 .navbar li button {
     float: right;
 }
-.navbar button[data-action="switch-lang-en"] {
+.navbar button[data-action="switch-lang-en"], .navbar button[data-action="switch-lang-es"] {
    
     background: none; 
     border: none;      
@@ -50,13 +50,13 @@
     white-space: nowrap; 
 }
 
-.navbar button[data-action="switch-lang-en"]:hover {
+.navbar button[data-action="switch-lang-en"]:hover, .navbar button[data-action="switch-lang-es"]:hover {
     background-color: #D3D3D3; 
     color: #0f0f0f;            
 }
 
 
-.navbar button[data-action="switch-lang-en"]:focus {
+.navbar button[data-action="switch-lang-en"]:focus, .navbar button[data-action="switch-lang-es"]:focus {
     outline: 2px solid #007bff;
     outline-offset: 2px;
 }
@@ -65,3 +65,4 @@
 .navbar button[data-action="switch-lang-en"] strong {
     font-weight: bold; 
 }
+
