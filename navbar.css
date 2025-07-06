@@ -17,10 +17,51 @@
     background-color: #D3D3D3;
     color: #0f0f0f;
 }
-.navbar button{
-    background-color: #D3D3D3;
-    color: #0f0f0f;
-}
 .navbar li{
     float: right;
+}
+.navbar li button {
+    float: right;
+}
+.navbar button[data-action="switch-lang-en"] {
+   
+    background: none; 
+    border: none;      
+    padding: 0;        
+    margin: 0;         
+    font: inherit;     
+    cursor: pointer;   
+    outline: none;     
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;         
+    
+   
+    color: #c5c6c7;       
+    text-decoration: none; 
+    padding: 15px;         
+    display: block;        
+    text-align: center;    
+    font-family: Arial, Helvetica, sans-serif; 
+    
+
+    line-height: normal; 
+    box-sizing: border-box; 
+    white-space: nowrap; 
+}
+
+.navbar button[data-action="switch-lang-en"]:hover {
+    background-color: #D3D3D3; 
+    color: #0f0f0f;            
+}
+
+
+.navbar button[data-action="switch-lang-en"]:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+
+.navbar button[data-action="switch-lang-en"] strong {
+    font-weight: bold; 
 }
