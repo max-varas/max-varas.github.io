@@ -9,11 +9,13 @@ export function setupNavbarListeners() {
 
             if (action === 'switch-lang-en') {
                 event.preventDefault();
+                console.log("Click!");
                 switchToEnglish();
                 return;
             }
             if (action === 'switch-lang-es') {
                 event.preventDefault();
+                console.log("click");
                 switchToSpanish();
                 return;
             }
